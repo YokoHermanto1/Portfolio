@@ -4,12 +4,13 @@ interface ProjectType {
   id: number;
   category: string;
   title: string;
-  year: string;
+  start_year: number;
   description: string;
   role: string;
   tech: string[];
   image: string | null;
   link_url: string;
+  end_year: number;
 }
 
 function Projects() {
@@ -43,8 +44,7 @@ function Projects() {
       </div>
     );
   }
-
-
+  
 
   return (
     <section id="Projects" className="font-serif pb-15 md:px-10 mt-5">
@@ -76,26 +76,30 @@ function Projects() {
         <div className="divide-y divide-neutral-200">
           {projectList.map((project) => (
             <div
-               key={project.id}
+              key={project.id}
               className="py-12 grid gap-5 lg:grid-cols-[320px_1fr_360px] items-start group hover:bg-neutral-50/50 transition-colors duration-300 rounded-xl px-2 -mx-2"
             >
               <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 aspect-video">
-                <a href={project.link_url} target="blank" rel="noopener noreferrer">
-                <img
-                  src={
-                    project.image ||
-                    "https://via.placeholder.com/640x360?text=No+Image"
-                  }
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
+                <a
+                  href={project.link_url}
+                  target="blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={
+                      project.image ||
+                      "https://via.placeholder.com/640x360?text=No+Image"
+                    }
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
                 </a>
               </div>
               {/* 2. Informasi Utama Project */}
               <div className="space-y-4 lg:pl-8 h-full min-h-20 ">
                 <div className="flex justify-between uppercase tracking-[0.35em] text-[11px] text-neutral-400 font-serif">
                   <span>{project.category}</span>
-                  <span className="font-sans">{project.year}</span>
+                  <span className="font-sans"> {project.start_year} {project.end_year ? `- ${project.end_year}` : ''}</span>
                 </div>
                 <h3 className="text-3xl  text-black">{project.title}</h3>
                 <p className="text-sm leading-relaxed text-neutral-600 font-serif">
