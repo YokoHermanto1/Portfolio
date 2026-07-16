@@ -13,7 +13,7 @@ function Background() {
   const works = ["Research", "Design", "Development"];
 
   return (
-    <section id="Background" className="font-serif pb-15 md:px-10 text-center md:text-left">
+    <section id="Background" className="font-serif pb-15 md:px-10 text-center md:text-left ">
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 space-y-12">
         {/* ================= HEADER SECTION ================= */}
         <div className="border-b border-neutral-200 pb-6">
