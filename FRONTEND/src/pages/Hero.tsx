@@ -14,11 +14,11 @@ function Hero() {
   ];
 
   return (
-    <section id="hero" className="pt-20 pb-15 font-serif md:px-10 text-center md:text-left ">
+    <section id="hero" className="pt-20 pb-15 font-serif md:px-10 text-center lg:text-left ">
       {/* Parent Container */}
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 py-10 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_auto] items-center">
         {/* Description & CTA Button */}
-        <div className="space-y-9 lg:text-left sm:order-1 lg:order-0 md:text-center">
+        <div className="flex flex-col items-center lg:items-start space-y-9 sm:order-1 lg:order-0 ">
           <h1
             aria-label="Yoko Hermanto"
             className="font-serif font-normal leading-none text-[clamp(4rem,10vw,8rem)]"
@@ -28,7 +28,7 @@ function Hero() {
           </h1>
           <div className=" space-y-2 ">
             <p className="font-serif text-xl">Fullstack Developer</p>
-            <p className=" max-w-2xl text-xl font-serif">
+            <p className=" mx-auto lg:mx-0 max-w-2xl text-xl font-serif text-center lg:text-left">
               Building thoughtful products for people, not just writing code.
             </p>
           </div>
