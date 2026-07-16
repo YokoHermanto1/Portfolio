@@ -14,7 +14,7 @@ function Hero() {
   ];
 
   return (
-    <section id="hero" className="pt-20 pb-20 font-serif md:px-10">
+    <section id="hero" className="pt-20 pb-15 font-serif md:px-10 text-center md:text-left">
       {/* Parent Container */}
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 py-10 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_auto] items-center">
         {/* Description & CTA Button */}
@@ -32,13 +32,13 @@ function Hero() {
               Building thoughtful products for people, not just writing code.
             </p>
           </div>
-          <button className="w-fit rounded-2xl bg-blue-500 py-3 px-9 font-serif text-white transition hover:bg-blue-700 ">
+          <button className="w-fit rounded-2xl sm:px-0 bg-blue-500 py-3 px-9 font-serif text-white transition hover:bg-blue-700 ">
             Get in touch
           </button>
         </div>
 
         {/* Profile Image */}
-        <div className="h-64 w-64 sm:h-80 sm:w-80 lg:h-110 lg:w-110 shrink-0 rounded-full bg-white p-1 ring-1 ring-neutral-300 shadow-2xl order-first lg:order-0">
+        <div className="mx-auto lg:mx-0 h-64 w-64 sm:h-80 sm:w-80 lg:h-110 lg:w-110 shrink-0 rounded-full bg-white p-1 ring-1 ring-neutral-300 shadow-2xl order-first lg:order-0">
           <img
             src={ProfileImage}
             alt="Yoko Hermanto"
