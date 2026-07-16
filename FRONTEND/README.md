@@ -133,7 +133,7 @@ To maximize efficiency and eliminate network disruptions—such as `net::ERR_CON
 To get the full-stack application up and running locally, execute the following commands in their respective project directories:
 
 #### 🔹 Backend (Laravel)
-Instead of using CodeIgniter's `php spark serve`, Laravel uses its own integrated development server wrapper: "php artisan serve" to run
+Laravel uses its own integrated development server wrapper: "php artisan serve" to run
 
 #### 🔹 Frontend (React)
 React using "npm run dev" to run 
