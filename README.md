@@ -72,6 +72,7 @@ export default defineConfig([
   },
 ])
 
+```
 # 🛠️ Full-Stack Portfolio Architecture & Connection Flow
 
 This documentation explains how data dynamically flows from the Cloud Database down to the React Frontend UI, alongside the key configurations applied during the development process.
