@@ -32,7 +32,7 @@ function Hero() {
               Building thoughtful products for people, not just writing code.
             </p>
           </div>
-          <button className="w-fit rounded-2xl sm:px-0 bg-blue-500 py-3 px-9 font-serif text-white transition hover:bg-blue-700 ">
+          <button className="w-fit rounded-2xl bg-blue-500 py-3 px-9 font-serif text-white transition hover:bg-blue-700 ">
             Get in touch
           </button>
         </div>

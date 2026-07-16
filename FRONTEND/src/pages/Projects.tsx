@@ -52,7 +52,7 @@ function Projects() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-sans text-xl font-medium tracking-widest text-neutral-400">
+              <span className="font-serif text-xl font-medium tracking-widest text-neutral-400">
                 02 /
               </span>
               <h2 className="text-4xl sm:text-5xl font-normal text-neutral-900">
@@ -61,7 +61,7 @@ function Projects() {
             </div>
 
             {/* Deskripsi Rapat Kanan */}
-            <p className="text-sm sm:text-base text-neutral-500 max-w-md sm:text-right leading-relaxed font-sans">
+            <p className="text-sm text-neutral-500 max-w-sm sm:text-right leading-relaxed font-serif text-center">
               A collection of products I have designed and built through
               academic programs, courses, and independent work.
             </p>

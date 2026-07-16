@@ -29,7 +29,7 @@ function Background() {
             </div>
 
             {/* Deskripsi Singkat/Sub-headline di Sisi Kanan Header */}
-            <p className="text-sm text-neutral-500 max-w-xs sm:text-right leading-relaxed font-serif">
+            <p className="text-sm text-neutral-500 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
               A brief overview of my professional philosophy and core
               cross-functional disciplines.
             </p>
