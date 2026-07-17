@@ -29,7 +29,6 @@ function Toolkit() {
         },
       ],
     },
-
     {
       category: "Tools & Ecosystem",
       items: [
@@ -52,23 +51,6 @@ function Toolkit() {
       ],
     },
     {
-      category: "Database Architecture",
-      items: [
-        {
-          name: "Neon",
-          desc: "Serverless PostgreSQL for modern cloud workflows.",
-        },
-        {
-          name: "Firebase",
-          desc: "Realtime data sync and flexible NoSQL storage.",
-        },
-        {
-          name: "PostgreSQL",
-          desc: "Advanced and reliable relational data structures.",
-        },
-      ],
-    },
-    {
       category: "Process",
       items: [
         {
@@ -86,6 +68,23 @@ function Toolkit() {
         {
           name: "Human-Centered Design",
           desc: "Prioritizing the end-user experience throughout the lifecycle.",
+        },
+      ],
+    },
+    {
+      category: "Database Architecture",
+      items: [
+        {
+          name: "Neon",
+          desc: "Serverless PostgreSQL for modern cloud workflows.",
+        },
+        {
+          name: "Firebase",
+          desc: "Realtime data sync and flexible NoSQL storage.",
+        },
+        {
+          name: "PostgreSQL",
+          desc: "Advanced and reliable relational data structures.",
         },
       ],
     },
