@@ -10,7 +10,7 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   const menuNavbar = [
-    { id: "Background", title: "Background", href: "#Background" },
+    { id: "background", title: "Background", href: "#Background" },
     { id: "projects", title: "Projects", href: "#Projects" },
     { id: "toolkit", title: "Toolkit", href: "#Toolkit" },
     { id: "contact", title: "Contact", href: "#contact" },
