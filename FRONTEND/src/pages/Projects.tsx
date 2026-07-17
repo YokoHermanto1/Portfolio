@@ -223,7 +223,7 @@ function Projects() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-serif text-xl font-medium tracking-widest text-neutral-400">
+              <span className="font-sans text-xl font-medium tracking-widest text-neutral-400">
                 02 /
               </span>
               <h2 className="text-4xl sm:text-5xl font-normal text-neutral-900">

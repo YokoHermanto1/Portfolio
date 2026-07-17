@@ -2,6 +2,7 @@ import Background from "../pages/Background";
 import Hero from "../pages/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../pages/Projects";
+import Toolkit from "../pages/Toolkit";
 
 function Home() {
   return (
@@ -20,6 +21,10 @@ function Home() {
 
       <section id="Projects">
         <Projects />
+      </section>
+
+      <section id="Toolkit">
+        <Toolkit />
       </section>
     </main>
   );
