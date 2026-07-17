@@ -141,7 +141,7 @@ function Toolkit() {
                           {itemNumber}
                         </span>
                         {/* Nama Teknologi */}
-                        <span className="font-sans text-sm font-bold tracking-wider uppercase text-neutral-800 transition-colors group-hover:text-black">
+                        <span className="font-serif text-sm font-bold tracking-wider uppercase text-neutral-800 transition-colors group-hover:text-black">
                           {item.name}
                         </span>
                       </div>
