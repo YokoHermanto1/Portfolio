@@ -107,6 +107,17 @@
 //                   <p className="text-sm leading-relaxed text-neutral-600 font-serif">
 //                     {project.description}
 //                   </p>
+// <div className="pt-2">
+//   <a
+//     href={project.link_url}
+//     target="_blank"
+//     rel="noopener noreferrer"
+//     className="inline-flex items-center gap-1.5 text-xs font-sans font-bold tracking-wider uppercase text-neutral-800 hover:text-neutral-500 border-b border-neutral-800 hover:border-neutral-500 pb-0.5 transition-all duration-300"
+//   >
+//     View Case Study{" "}
+//     <span className="text-[10px] select-none">↗</span>
+//   </a>
+// </div>
 //                 </div>
 
 //                 {/* 3. Peran & Tech Stack (Sisi Kanan) */}
@@ -232,7 +243,7 @@ function Projects() {
             </div>
 
             {/* Deskripsi Rapat Kanan */}
-            <p className="text-sm text-neutral-500 max-w-sm sm:text-right leading-relaxed font-serif text-center">
+            <p className="text-sm text-neutral-500 max-w-sm sm:text-right leading-relaxed font-serif">
               A collection of products I have designed and built through
               academic programs, courses, and independent work.
             </p>
@@ -278,6 +289,17 @@ function Projects() {
                   <p className="text-sm leading-relaxed text-neutral-600 font-serif">
                     {project.description}
                   </p>
+                  <div className="pt-2">
+                    <a
+                      href={project.link_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-sans font-bold tracking-wider uppercase text-neutral-800 hover:text-neutral-500 border-b border-neutral-800 hover:border-neutral-500 pb-0.5 transition-all duration-300"
+                    >
+                      View Case Study{" "}
+                      <span className="text-[10px] select-none">↗</span>
+                    </a>
+                  </div>
                 </div>
 
                 {/* 3. Peran & Tech Stack (Sisi Kanan) */}
