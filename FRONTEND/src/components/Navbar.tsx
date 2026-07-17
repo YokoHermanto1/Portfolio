@@ -12,7 +12,7 @@ function Navbar() {
   const menuNavbar = [
     { id: "Background", title: "Background", href: "#Background" },
     { id: "projects", title: "Projects", href: "#Projects" },
-    { id: "toolkit", title: "Toolkit", href: "#toolkit" },
+    { id: "toolkit", title: "Toolkit", href: "#ToolkitItems" },
     { id: "contact", title: "Contact", href: "#contact" },
   ];
   return (
