@@ -36,19 +36,19 @@ function Contact() {
     <section id="Contact" className="font-serif md:px-10 pt-4 text-left">
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 space-y-12">
         {/* =============== Header =========================== */}
-        <div className="border-b border-neutral-200 pb-6">
+        <div className="border-b border-neutral-200 dark:border-neutral-800 pb-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-sans text-xl font-medium tracking-widest text-neutral-400 select-none">
+              <span className="font-sans text-xl font-medium tracking-widest dark:text-neutral-500 text-neutral-400 select-none">
                 04 /
               </span>
-              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-neutral-900">
+              <h2 className="text-4xl sm:text-5xl font-serif font-normal dark:text-neutral-100 text-neutral-900">
                 Contact
               </h2>
             </div>
             {/* Deskripsi Singkat/Sub-headline di Sisi Kanan Header */}
-            <p className="text-sm text-neutral-500 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
+            <p className="text-sm text-neutral-500 dark:text-neutral-400 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
               Where purposeful design meets scalable execution. Reaching out is
               the first step.
             </p>
@@ -57,14 +57,14 @@ function Contact() {
         {/* ================= CONTENT SECTION ================= */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 font-serif">
           <div className="flex flex-col justify-center">
-            <p className="text-5xl sm:text-6xl lg:text-6xl font-serif text-neutral-900 leading-[1.1] tracking-tight text-center lg:text-left">
+            <p className="text-5xl sm:text-6xl lg:text-6xl font-serif text-neutral-900 dark:text-neutral-100 leading-[1.1] tracking-tight text-center lg:text-left">
               Let's build something meaningful together.
             </p>
           </div>
           {/* ➡️ KOLOM KANAN: Susunan Baru (Links di Atas, Status di Bawah) */}
-          <div className="flex flex-col space-y-12 md:pl-16 md:border-l border-neutral-200">
+          <div className="flex flex-col space-y-12 md:pl-16 md:border-l border-neutral-200 dark:border-neutral-800">
             {/* 1. Mapped List Contact */}
-            <div className="flex flex-col border-b border-neutral-200">
+            <div className="flex flex-col border-b border-neutral-200 dark:border-neutral-800">
               {contact.map((item) => {
                 // Check jika item saat ini adalah LOCATION
                 const isLocation = item.label === "LOCATION";
@@ -74,18 +74,18 @@ function Contact() {
                     // Menggunakan <div> biasa tanpa interaksi pointer / hover link
                     <div
                       key={item.id}
-                      className="flex items-center justify-between py-6 border-b border-neutral-200 select-text"
+                      className="flex items-center justify-between py-6 border-b border-neutral-200 dark:border-neutral-800 select-text"
                     >
                       <div className="flex items-baseline gap-6">
-                        <span className="text-xs font-sans text-neutral-400 select-none">
+                        <span className="text-xs font-sans text-neutral-400 dark:text-neutral-500 select-none">
                           {item.id}
                         </span>
                         <div>
-                          <span className="block text-xs font-bold font-serif tracking-widest text-neutral-900 uppercase">
+                          <span className="block text-xs font-bold font-serif tracking-widest text-neutral-900 dark:text-neutral-100 uppercase">
                             {item.label}
                           </span>
                           {/* Teks biasa tanpa efek underline */}
-                          <span className="text-sm font-serif text-neutral-600">
+                          <span className="text-sm font-serif text-neutral-600 dark:text-neutral-300">
                             {item.value}
                           </span>
                         </div>
@@ -100,23 +100,25 @@ function Contact() {
                   <a
                     key={item.id}
                     href={item.href}
+                    target={!isResume ? "_blank" : undefined}
+                    rel={!isResume ? "noopener noreferrer" : undefined}
                     download={isResume ? "CV_Yoko_Hermanto.pdf" : undefined}
-                    className="flex items-center justify-between py-6 border-b border-neutral-200 group transition-colors"
+                    className="flex items-center justify-between py-6 border-b border-neutral-200 dark:border-neutral-800 group transition-colors"
                   >
                     <div className="flex items-baseline gap-6">
-                      <span className="text-xs font-sans text-neutral-400 select-none">
+                      <span className="text-xs font-sans text-neutral-400 dark:text-neutral-500  select-none">
                         {item.id}
                       </span>
                       <div>
-                        <span className="block text-xs font-bold font-serif tracking-widest text-neutral-900 uppercase">
+                        <span className="block text-xs font-bold font-serif tracking-widest text-neutral-900 dark:text-neutral-100  uppercase">
                           {item.label}
                         </span>
-                        <span className="text-sm font-serif text-neutral-600 group-hover:text-amber-500 transition-colors underline decoration-neutral-300 underline-offset-4">
+                        <span className="text-sm font-serif text-neutral-600 group-hover:text-amber-500 transition-colors underline decoration-neutral-300 underline-offset-4 dark:text-neutral-300 dark:decoration-neutral-700 dark:hover:text-amber-400">
                           {item.value}
                         </span>
                       </div>
                     </div>
-                    <span className="text-xl text-neutral-400 group-hover:text-amber-500 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-200 font-serif">
+                    <span className="text-xl text-neutral-400 group-hover:text-amber-500 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-200 font-serif dark:group-hover:text-amber-400 dark:text-neutral-500">
                       ↗
                     </span>
                   </a>
@@ -126,12 +128,12 @@ function Contact() {
             {/* 2. Status Open To (Sekarang di bawah link, menggantikan text paragraf lama) */}
             <div className="space-y-3 flex flex-col items-center lg:items-start text-center lg:text-left ">
               <div className="flex items-center gap-2">
-                <FaStarOfLife className="text-[10px] text-neutral-400 animate-spin-[spin_8s_linear_infinite]"></FaStarOfLife>
-                <p className="text-sm italic font-serif text-neutral-500">
+                <FaStarOfLife className="text-[10px] text-neutral-400 dark:text-neutral-500 animate-spin-[spin_8s_linear_infinite]"></FaStarOfLife>
+                <p className="text-sm italic font-serif dark:text-neutral-400 text-neutral-500">
                   Currently open to
                 </p>
               </div>
-              <ul className="text-xs font-serif font-bold tracking-widest text-neutral-800 uppercase space-y-1.5 border-neutral-300 pb-4 w-56">
+              <ul className="text-xs font-serif font-bold tracking-widest text-neutral-800 dark:text-neutral-200 uppercase space-y-1.5 border-neutral-300 pb-4 w-56">
                 <li>Frontend Developer</li>
                 <li>UI/UX Design</li>
                 <li>Product Management</li>
@@ -143,27 +145,27 @@ function Contact() {
 
         {/* ================= 3. INTEGRATED FOOTER SECTION ================= */}
         {/* Garis horizontal memisahkan konten atas dengan footer */}
-        <div className="border-t border-neutral-200 py-5 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 text-center lg:text-left">
+        <div className="border-t border-neutral-200 dark:border-neutral-800 py-5 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-24 text-center lg:text-left">
           {/* ⬅️ FOOTER KIRI: Closing Statement */}
           <div className="flex flex-col justify-center space-y-1">
-            <p className="text-lg sm:text-xl text-neutral-800 font-normal ">
+            <p className="text-lg sm:text-xl text-neutral-800 dark:text-neutral-100 font-normal ">
               Thanks for stopping by.
             </p>
-            <p className="text-lg sm:text-xl italic text-neutral-800">
+            <p className="text-lg sm:text-xl italic text-neutral-800 dark:text-neutral-100 ">
               I look forward to hearing from you.
             </p>
           </div>
 
           {/* ➡️ FOOTER KANAN: Credits & Copyright */}
           {/* md:border-l otomatis bikin garis vertikalnya sejajar lurus dari atas ke bawah */}
-          <div className="flex flex-col space-y-1 md:pl-16 md:border-l border-neutral-200 justify-center text-center lg:text-right">
-            <p className="text-xs sm:text-sm italic text-neutral-500">
+          <div className="flex flex-col space-y-1 md:pl-16 md:border-l border-neutral-200 dark:border-neutral-800 justify-center text-center lg:text-right">
+            <p className="text-xs sm:text-sm italic text-neutral-500 dark:text-neutral-400">
               Designed & Developed by
             </p>
-            <p className="text-base text-neutral-900 font-normal tracking-wide">
+            <p className="text-base text-neutral-900 dark:text-neutral-100 font-normal tracking-wide">
               Yoko Hermanto
             </p>
-            <p className="text-xs text-neutral-400 font-serif select-none ">
+            <p className="text-xs text-neutral-400 dark:text-neutral-500 font-serif select-none ">
               © 2026 All rights reserved.
             </p>
           </div>
