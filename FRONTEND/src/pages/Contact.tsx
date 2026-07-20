@@ -81,11 +81,11 @@ function Contact() {
                           {item.id}
                         </span>
                         <div>
-                          <span className="block text-xs font-bold font-sans tracking-widest text-neutral-900 uppercase">
+                          <span className="block text-xs font-bold font-serif tracking-widest text-neutral-900 uppercase">
                             {item.label}
                           </span>
                           {/* Teks biasa tanpa efek underline */}
-                          <span className="text-sm font-sans text-neutral-600">
+                          <span className="text-sm font-serif text-neutral-600">
                             {item.value}
                           </span>
                         </div>
