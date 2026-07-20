@@ -1,5 +1,6 @@
 import Marquee from "../components/Marquee";
 import ProfileImage from "../assets/ImageProfile.png";
+import ChangeTheme from "../components/ChangeTheme";
 
 function Hero() {
   const softSkills = [
@@ -18,32 +19,86 @@ function Hero() {
       id="hero"
       className="pt-20 pb-15 font-serif md:px-10 text-center lg:text-left "
     >
+      <div className="w-full max-w-7xl mx-auto text-right p-4">
+        <ChangeTheme />
+      </div>
       {/* Parent Container */}
-      <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 py-10 grid grid-cols-1 gap-10 lg:grid-cols-[1fr_auto] items-center">
+      <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-10 px-4 py-10 sm:px-8 lg:grid-cols-[1fr_auto] lg:px-0">
         {/* Description & CTA Button */}
         <div className="flex flex-col items-center lg:items-start space-y-9 sm:order-1 lg:order-0 ">
           <h1
             aria-label="Yoko Hermanto"
-            className="font-serif font-normal leading-none text-[clamp(4rem,10vw,8rem)]"
+            className="text-[clamp(4rem,10vw,8rem)] font-normal leading-none"
           >
             <span className="block">Yoko</span>
             <span className="block">Hermanto</span>
           </h1>
           <div className=" space-y-2 ">
-            <p className="font-serif text-xl">Frontend Developer</p>
-            <p className=" mx-auto lg:mx-0 max-w-2xl text-xl font-serif text-center lg:text-left">
+            <p className="text-xl">Frontend Developer</p>
+            <p
+              className=" 
+                mx-auto
+                max-w-2xl
+                text-center
+                text-xl
+
+                lg:mx-0
+                lg:text-left
+
+                text-neutral-600
+                dark:text-neutral-300"
+            >
               Building thoughtful products for people, not just writing code.
             </p>
           </div>
-          <a href="#Contact">
-            <button className="w-fit rounded-2xl bg-blue-500 py-3 px-9 font-serif text-white transition hover:bg-blue-700 ">
-              Get in touch
-            </button>
+          <a
+            href="#Contact"
+            className="
+                  w-fit
+                  rounded-2xl
+                  px-9
+                  py-3
+                  bg-neutral-900
+                  text-white
+                  transition-colors
+                  duration-300
+                  hover:bg-neutral-700
+                  dark:bg-white
+                  dark:text-neutral-900
+                  dark:hover:bg-neutral-200"
+          >
+            Get in touch
           </a>
         </div>
 
         {/* Profile Image */}
-        <div className="mx-auto lg:mx-0 h-64 w-64 sm:h-80 sm:w-80 lg:h-110 lg:w-110 shrink-0 rounded-full bg-white p-1 ring-1 ring-neutral-300 shadow-2xl order-first lg:order-0">
+        <div
+          className="
+            mx-auto
+            h-64
+            w-64
+            shrink-0
+            order-first
+
+            rounded-full
+
+            bg-white
+            p-1
+            ring-1
+            ring-neutral-300
+            shadow-2xl
+
+            dark:bg-neutral-900
+            dark:ring-neutral-700
+
+            sm:h-80
+            sm:w-80
+
+            lg:order-0
+            lg:h-110
+            lg:w-110
+            lg:mx-0"
+        >
           <img
             src={ProfileImage}
             alt="Yoko Hermanto"

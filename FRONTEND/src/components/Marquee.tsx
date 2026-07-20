@@ -21,30 +21,40 @@ function Marquee({ items }: MarqueeProps) {
       >
         <div
           className="
-            absolute
+          absolute
             left-0
             top-1/2
-            -translate-y-1/2
             z-20
-            bg-white
-            pl-8
-            pr-10
             flex
+            -translate-y-1/2
             items-center
             gap-3
+
             border-x
             border-neutral-200
+
+            bg-white
+            px-8
+
+            dark:border-neutral-800
+            dark:bg-neutral-950
           "
         >
-          <Sparkles className="size-4" />
-          <span className="font-serif text-lg">Abilities</span>
+          <Sparkles className="size-4 text-neutral-900 dark:text-neutral-100" />
+          <span className="font-serif text-lg text-neutral-900 dark:text-neutral-100">Abilities</span>
         </div>
 
         <div className="marquee-track">
           {doubledItems.map((item, index) => (
             <span
               key={index}
-              className="whitespace-nowrap font-serif text-lg mx-15"
+              className="           
+                mx-15
+                whitespace-nowrap
+                font-serif
+                text-lg
+                text-neutral-700
+                dark:text-neutral-300"
             >
               {item}
             </span>

@@ -1,4 +1,19 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* =======================================================
+   Marquee
+======================================================= */
 
 .marquee-track {
   display: flex;
@@ -16,12 +31,19 @@
   }
 }
 
-html{
-  scroll-behavior: smooth;
+/* =======================================================
+   Theme
+======================================================= */
+
+body {
+  background: #ffffff;
+  color: #171717;
+  transition:
+    background-color 300ms ease,
+    color 300ms ease;
 }
 
-@media (prefers-reduced-motion: no-preference){
-  html{
-    scroll-behavior: smooth;
-  }
+html.dark body {
+  background: #0a0a0a;
+  color: #f5f5f5;
 }

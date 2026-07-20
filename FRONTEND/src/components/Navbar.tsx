@@ -37,25 +37,56 @@ function Navbar() {
       {/* 1. NAVBAR UTAMA */}
       {/* Menggunakan bg-white solid. Efek hilang memakai kombinasi translate-y dan opacity agar transisinya mulus */}
       <nav
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 border-b bg-white border-neutral-200 shadow-sm ${
-          isVisible
-            ? "translate-y-0 opacity-100"
-            : "-translate-y-full opacity-0 pointer-events-none"
-        }`}
+        className={`
+          fixed
+          top-0
+          left-0
+          z-50
+          w-full
+          border-b
+          border-neutral-200
+          bg-white/90
+          backdrop-blur-md
+          shadow-sm
+          transition-all
+          duration-300
+          dark:border-neutral-800
+          dark:bg-neutral-950/90
+          ${
+            isVisible
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-full opacity-0 pointer-events-none"
+          }
+          `}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-8 py-6">
           {/* LOGO */}
-          <h1 className="text-xl font-bold font-serif text-neutral-900">
+          <h1
+            className="font-serif
+              text-xl
+              font-bold
+              text-neutral-900
+              dark:text-neutral-100"
+          >
             <a href="#Hero">PORTFOLIO</a>
           </h1>
 
           {/* DESKTOP MENU */}
-          <ul className="hidden md:flex gap-20 text-base font-serif text-neutral-800">
+          <ul
+            className="hidden
+                gap-20
+                font-serif
+                text-base
+                text-neutral-800
+                md:flex
+                dark:text-neutral-200
+"
+          >
             {menuNavbar.map((item) => (
               <li key={item.id}>
                 <a
                   href={item.href}
-                  className="hover:text-amber-500 transition-colors"
+                  className="transition-color hover:text-amber-500 "
                 >
                   {item.title}
                 </a>
@@ -107,7 +138,7 @@ function Navbar() {
                 <a
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-neutral-800 hover:text-amber-500 transition-colors block py-2"
+                  className="hover:text-amber-500 transition-colors block py-2"
                 >
                   {item.title}
                 </a>
