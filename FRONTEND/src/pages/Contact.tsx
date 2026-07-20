@@ -24,7 +24,7 @@ function Contact() {
       id: "04",
       label: "RESUME",
       value: "Download CV (PDF)",
-      href: "",
+      href: "/document/Frontend_Developer.pdf",
     },
     {
       id: "05",
@@ -98,9 +98,9 @@ function Contact() {
                 // Render normal untuk item yang merupakan sebuah LINK (Email, Github, dll)
                 return (
                   <a
-                    download={isResume ? "CV_Yoko_Hermanto.pdf" : undefined}
                     key={item.id}
                     href={item.href}
+                    download={isResume ? "CV_Yoko_Hermanto.pdf" : undefined}
                     className="flex items-center justify-between py-6 border-b border-neutral-200 group transition-colors"
                   >
                     <div className="flex items-baseline gap-6">
