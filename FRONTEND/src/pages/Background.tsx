@@ -16,20 +16,20 @@ function Background() {
     <section id="Background" className="font-serif pb-15 md:px-10 text-left ">
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 space-y-12">
         {/* ================= HEADER SECTION ================= */}
-        <div className="border-b border-neutral-200 pb-6">
+        <div className="border-b border-neutral-200 pb-6 dark:border-neutral-800 ">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-sans text-xl font-medium tracking-widest text-neutral-400 select-none">
+              <span className="font-sans text-xl font-medium tracking-widest text-neutral-400 select-none dark:text-neutral-500">
                 01 /
               </span>
-              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-neutral-900">
+              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-neutral-900 dark:text-neutral-100">
                 Background
               </h2>
             </div>
 
             {/* Deskripsi Singkat/Sub-headline di Sisi Kanan Header */}
-            <p className="text-sm text-neutral-500 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
+            <p className="text-sm text-neutral-500 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif dark:text-neutral-400">
               A brief overview of my professional philosophy and core
               cross-functional disciplines.
             </p>
@@ -41,13 +41,13 @@ function Background() {
           {/* Kolom Teks Utama */}
           <div className="max-w-4xl">
             {/* Heading */}
-            <h3 className="font-serif text-[30px] leading-tight tracking-[-0.02em] text-neutral-900">
+            <h3 className="dark:text-neutral-100 font-serif text-[30px] leading-tight tracking-[-0.02em] text-neutral-900">
               I build software by understanding the problem before choosing the
               technology.
             </h3>
 
             {/* Intro */}
-            <p className="mt-8 text-base leading-[1.9] text-neutral-700 font-serif">
+            <p className="mt-8 text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
               Whether I'm designing the interface, modeling the database, or
               building the API, I like seeing how every layer fits together.
               This comprehensive view allows me to bridge the gap between design
@@ -55,10 +55,10 @@ function Background() {
               scalable in the backend as it is intuitive for the user.
             </p>
 
-            <hr className="my-6 border-neutral-200" />
+            <hr className="my-6 border-neutral-200 dark:border-neutral-800" />
 
             {/* Paragraph 2 */}
-            <p className="text-base leading-[1.9] text-neutral-700 font-serif">
+            <p className="text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
               My thesis project, UlasKatering, brought those disciplines
               together. I independently researched, designed, and developed the
               platform from Figma designs and database modeling to a CodeIgniter
@@ -69,10 +69,10 @@ function Background() {
               more easily.
             </p>
 
-            <hr className="my-6 border-neutral-200" />
+            <hr className="my-6 border-neutral-200 dark:border-neutral-800" />
 
             {/* Paragraph 3 */}
-            <p className="text-base leading-[1.9] text-neutral-700 font-serif">
+            <p className="text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
               To maintain this end-to-end ownership efficiently, I integrate AI
               into my daily workflow as a force multiplier. Leveraging AI to
               accelerate technical research, prototyping, and debugging allows

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Menu, X } from "lucide-react";
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(true); // State untuk menentukan navbar muncul/sembunyi
@@ -96,49 +97,101 @@ function Navbar() {
 
           {/* MOBILE HAMBURGER BUTTON */}
           <button
+            type="button"
             onClick={() => setIsOpen(true)}
-            className="flex md:hidden flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none"
-            aria-label="Open Menu"
+            aria-label="Open menu"
+            className="
+              rounded-lg
+              p-2
+              transition-colors
+              hover:bg-neutral-100
+              dark:hover:bg-neutral-900
+              md:hidden
+            "
           >
-            <span className="block w-6 h-0.5 bg-neutral-900" />
-            <span className="block w-6 h-0.5 bg-neutral-900" />
-            <span className="block w-6 h-0.5 bg-neutral-900" />
+            <Menu className="size-6 text-neutral-900 dark:text-neutral-100" />
           </button>
         </div>
       </nav>
 
       {/* 🛠️ 2. HALAMAN MENU FULLSCREEN (Khusus Mobile dengan Efek Fade Mulus) */}
       <div
-        className={`fixed inset-0 bg-white z-50 flex flex-col md:hidden transition-all duration-300 ease-in-out ${
-          isOpen
-            ? "opacity-100 pointer-events-auto visible"
-            : "opacity-0 pointer-events-none invisible"
-        }`}
+        className={`    
+          fixed
+          inset-0
+          z-50
+          flex
+          flex-col
+          bg-white
+          dark:bg-neutral-950
+          transition-all
+          duration-300
+          ease-in-out
+          md:hidden
+      ${
+        isOpen
+          ? "opacity-100 pointer-events-auto visible"
+          : "opacity-0 pointer-events-none invisible"
+      }`}
       >
-        <div className="flex items-center justify-between px-8 py-6 border-b border-neutral-100">
-          <h1 className="text-xl font-bold font-serif text-neutral-900">
+        <div className="    
+                flex
+                items-center
+                justify-between
+                border-b
+                border-neutral-200
+                px-8
+                py-6
+                dark:border-neutral-800">
+          <h1 className="    
+                font-serif
+                text-xl
+                font-bold
+                text-neutral-900
+                dark:text-neutral-100">
             <a href="#Hero" onClick={() => setIsOpen(false)}>
               PORTFOLIO
             </a>
           </h1>
+          {/* CLose */}
           <button
+            type="button"
             onClick={() => setIsOpen(false)}
-            className="flex flex-col justify-center items-center w-8 h-8 focus:outline-none relative"
-            aria-label="Close Menu"
+            aria-label="Close menu"
+            className="
+              rounded-lg
+              p-2
+              transition-colors
+              hover:bg-neutral-100
+              dark:hover:bg-neutral-900
+            "
           >
-            <span className="block w-6 h-0.5 bg-neutral-900 rotate-45 absolute" />
-            <span className="block w-6 h-0.5 bg-neutral-900 -rotate-45 absolute" />
+            <X className="size-6 text-neutral-900 dark:text-neutral-100" />
           </button>
         </div>
 
         <div className="flex-1 flex flex-col justify-center items-center">
-          <ul className="flex flex-col space-y-10 text-center text-2xl font-serif">
+          <ul className="    
+                flex
+                flex-col
+                space-y-10
+
+                text-center
+                text-2xl
+                font-serif
+
+                text-neutral-900
+                dark:text-neutral-100">
             {menuNavbar.map((item) => (
               <li key={item.id}>
                 <a
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="hover:text-amber-500 transition-colors block py-2"
+                  className="  
+                    block
+                    py-2
+                    transition-colors
+                    hover:text-amber-500"
                 >
                   {item.title}
                 </a>
