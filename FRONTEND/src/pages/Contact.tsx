@@ -116,7 +116,7 @@ function Contact() {
                         </span>
                       </div>
                     </div>
-                    <span className="text-xl text-neutral-400 group-hover:text-amber-500 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-200 font-sans">
+                    <span className="text-xl text-neutral-400 group-hover:text-amber-500 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 duration-200 font-serif">
                       ↗
                     </span>
                   </a>
