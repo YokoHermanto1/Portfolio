@@ -29,7 +29,7 @@ function Navbar() {
     { id: "background", title: "Background", href: "#Background" },
     { id: "projects", title: "Projects", href: "#Projects" },
     { id: "toolkit", title: "Toolkit", href: "#Toolkit" },
-    { id: "contact", title: "Contact", href: "#contact" },
+    { id: "contact", title: "Contact", href: "#Contact" },
   ];
 
   return (
