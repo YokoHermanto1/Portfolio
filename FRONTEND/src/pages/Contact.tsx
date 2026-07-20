@@ -108,10 +108,10 @@ function Contact() {
                         {item.id}
                       </span>
                       <div>
-                        <span className="block text-xs font-bold font-sans tracking-widest text-neutral-900 uppercase">
+                        <span className="block text-xs font-bold font-serif tracking-widest text-neutral-900 uppercase">
                           {item.label}
                         </span>
-                        <span className="text-sm font-sans text-neutral-600 group-hover:text-amber-500 transition-colors underline decoration-neutral-300 underline-offset-4">
+                        <span className="text-sm font-serif text-neutral-600 group-hover:text-amber-500 transition-colors underline decoration-neutral-300 underline-offset-4">
                           {item.value}
                         </span>
                       </div>
