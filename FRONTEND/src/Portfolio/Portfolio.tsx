@@ -3,7 +3,8 @@ import Hero from "../pages/Hero";
 import Navbar from "../components/Navbar";
 import Projects from "../pages/Projects";
 import Toolkit from "../pages/Toolkit";
-import Contact from "../pages/Contact";
+import Contact from "../pages/Contact"
+
 
 function Home() {
   return (
