@@ -48,22 +48,23 @@ function Background() {
 
             {/* Intro */}
             <p className="mt-8 text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
-              Whether I'm designing the interface, modeling the database, or
-              building the API, I like seeing how every layer fits together.
-              This comprehensive view allows me to bridge the gap between design
-              and engineering, ensuring that the final application is as
-              scalable in the backend as it is intuitive for the user.
+              Whether I'm designing the interface or exploring how the backend
+              supports it, I like understanding how each layer connects it helps
+              me design experiences that are grounded in how the system actually
+              works, not just how it looks.
             </p>
 
             <hr className="my-6 border-neutral-200 dark:border-neutral-800" />
 
             {/* Paragraph 2 */}
             <p className="text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
-              My thesis project, UlasKatering, brought those disciplines
-              together. I independently researched, designed, and developed the
-              platform from Figma designs and database modeling to a CodeIgniter
-              backend, Quasar frontend, and PostgreSQL database. Through
-              usability testing, it achieved a 75.2 System Usability Scale (SUS)
+              My thesis project, UlasKatering, brought design and development
+              together. I led the UI/UX process end-to-end research,
+              wireframing, and prototyping in Figma and built the frontend
+              interface using Vue.js based on that design system. I also
+              supported backend and database integration (CodeIgniter,
+              PostgreSQL) through AI-assisted development. Through usability
+              testing, the platform achieved a 75.2 System Usability Scale (SUS)
               score, with 75% of participating SMEs reporting improved
               promotional reach and 71.4% of users finding catering services
               more easily.
@@ -73,16 +74,13 @@ function Background() {
 
             {/* Paragraph 3 */}
             <p className="text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
-              To maintain this end-to-end ownership efficiently, I integrate AI
-              into my daily workflow as a force multiplier. Leveraging AI to
-              accelerate technical research, prototyping, and debugging allows
-              me to focus my energy on what matters most: robust system
-              architecture, database scalability, and seamless user experience.
-              By offloading repetitive tasks, I balance modern automation with
-              human engineering intuition to refine complex business logic and
-              ensure code quality at pace. This portfolio built with Laravel,
-              React, TypeScript, and PostgreSQL reflects that highly efficient
-              approach.
+              AI is part of how I work. I use it to accelerate research,
+              prototyping, and backend exploration, which lets me focus more of
+              my energy on the design decisions and user-experience details that
+              need a human eye. This portfolio itself, built with React,
+              Tailwind CSS, and a Laravel backend, reflects that same approach:
+              building real, working products while continuing to grow my
+              independent development skills.
             </p>
           </div>
 
