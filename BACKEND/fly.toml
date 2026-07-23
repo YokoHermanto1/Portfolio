@@ -1,12 +1,6 @@
 app = "portfolio-api"
 primary_region = "sin"
 
-[build]
-
-[env]
-  APP_ENV = "production"
-  APP_DEBUG = "false"
-
 [http_service]
   internal_port = 8080
   force_https = true
