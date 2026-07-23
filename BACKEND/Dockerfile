@@ -20,6 +20,9 @@ WORKDIR /var/www
 # Copy project files
 COPY . .
 
+RUN mkdir -p storage/framework/{sessions,views,cache} bootstrap/cache \
+    && chmod -R 775 storage bootstrap/cache
+
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
@@ -29,7 +32,7 @@ RUN npm run build
 
 # Cache Laravel configuration
 RUN php artisan config:cache \
-    && php artisan route:cache 
+    && php artisan route:cache
 
 # Give proper permissions
 RUN chmod -R 775 storage bootstrap/cache
