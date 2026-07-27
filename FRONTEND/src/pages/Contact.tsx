@@ -135,9 +135,8 @@ function Contact() {
               </div>
               <ul className="text-xs font-serif font-bold tracking-widest text-neutral-800 dark:text-neutral-200 uppercase space-y-1.5 border-neutral-300 pb-4 w-56">
                 <li>Frontend Developer</li>
+                <li>Fullstack Developer</li>
                 <li>UI/UX Design</li>
-                <li>Product Management</li>
-                <li>Freelance Projects</li>
               </ul>
             </div>
           </div>
