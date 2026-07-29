@@ -103,7 +103,7 @@ function Contact() {
                     target={!isResume ? "_blank" : undefined}
                     rel={!isResume ? "noopener noreferrer" : undefined}
                     download={isResume ? "CV_Yoko_Hermanto.pdf" : undefined}
-                    className="flex items-center justify-between py-6 border-b border-(--border) group transition-colors"
+                    className="flex items-center justify-between py-6 border-b border-(--border) group transition-all duration-200 ease-out active:scale-[0.98] active:opacity-80"
                   >
                     <div className="flex items-baseline gap-6">
                       <span className="text-xs font-sans text-(--section-number) select-none transition-colors duration-300 group-hover:text-(--text)">
@@ -113,12 +113,12 @@ function Contact() {
                         <span className="block text-xs font-bold font-serif tracking-widest text-(--text) uppercase">
                           {item.label}
                         </span>
-                        <span className="contact-link text-sm font-serif hover-(--surface-hover) transition-colors decoration-neutral-300 underline-offset-4 text-(--text) dark:decoration-neutral-700 ">
+                        <span className="contact-link text-sm font-serif hover-(--surface-hover) transition-colors decoration-neutral-300 text-(--text) dark:decoration-neutral-700 ">
                           {item.value}
                         </span>
                       </div>
                     </div>
-                    <span className="text-xl transition-all group-hover:translate-x-1 group-hover-(--surface-hover) group-hover:-translate-y-0.5 duration-300 ease-out font-serif text-(--text)">
+                    <span className="text-xl transition-all group-hover:translate-x-1 group-hover-(--surface-hover) group-hover:-translate-y-0.5 duration-300 ease-out font-serif text-(--text) hidden md:block ">
                       ↗
                     </span>
                   </a>
