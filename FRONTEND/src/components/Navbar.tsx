@@ -6,6 +6,14 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // Kontrol menu mobile
 
   useEffect(() => {
+  document.body.style.overflow = isOpen ? "hidden" : "";
+
+  return () => {
+    document.body.style.overflow = "";
+  };
+}, [isOpen]);
+
+  useEffect(() => {
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {

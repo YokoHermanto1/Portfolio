@@ -16,20 +16,20 @@ function Background() {
     <section id="Background" className="font-serif pb-15 md:px-10 text-left ">
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 space-y-12">
         {/* ================= HEADER SECTION ================= */}
-        <div className="border-b border-neutral-200 pb-6 dark:border-neutral-800 ">
+        <div className="border-b pb-6 border-(--border) ">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-sans text-xl font-medium tracking-widest text-neutral-400 select-none dark:text-neutral-500">
+              <span className="font-sans text-xl font-medium tracking-widest select-none text-(--section-number)">
                 01 /
               </span>
-              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-neutral-900 dark:text-neutral-100">
+              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-(--text)">
                 Background
               </h2>
             </div>
 
             {/* Deskripsi Singkat/Sub-headline di Sisi Kanan Header */}
-            <p className="text-sm text-neutral-500 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif dark:text-neutral-400">
+            <p className="text-sm text-(--text) sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
               A brief overview of my professional philosophy and core
               cross-functional disciplines.
             </p>
@@ -41,23 +41,23 @@ function Background() {
           {/* Kolom Teks Utama */}
           <div className="max-w-4xl">
             {/* Heading */}
-            <h3 className="dark:text-neutral-100 font-serif text-[30px] leading-tight tracking-[-0.02em] text-neutral-900">
+            <h3 className="font-serif text-[30px] leading-tight tracking-[-0.02em] text-(--text)">
               I build software by understanding the problem before choosing the
               technology.
             </h3>
 
             {/* Intro */}
-            <p className="mt-8 text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
+            <p className="mt-8 text-base leading-[1.9] font-serif text-(--text)">
               Whether I'm designing the interface or exploring how the backend
               supports it, I like understanding how each layer connects it helps
               me design experiences that are grounded in how the system actually
               works, not just how it looks.
             </p>
 
-            <hr className="my-6 border-neutral-200 dark:border-neutral-800" />
+            <hr className="my-6 border-(--border)" />
 
             {/* Paragraph 2 */}
-            <p className="text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
+            <p className="text-base leading-[1.9] text-(--text)">
               My thesis project, UlasKatering, brought design and development
               together. I led the UI/UX process end-to-end research,
               wireframing, and prototyping in Figma and built the frontend
@@ -70,10 +70,10 @@ function Background() {
               more easily.
             </p>
 
-            <hr className="my-6 border-neutral-200 dark:border-neutral-800" />
+            <hr className="my-6 border-(--border)" />
 
             {/* Paragraph 3 */}
-            <p className="text-base leading-[1.9] text-neutral-700 font-serif dark:text-neutral-300">
+            <p className="text-base leading-[1.9] text-(--text)">
               AI is part of how I work. I use it to accelerate research,
               prototyping, and backend exploration, which lets me focus more of
               my energy on the design decisions and user-experience details that

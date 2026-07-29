@@ -50,23 +50,23 @@ function Projects() {
   return (
     <section
       id="Projects"
-      className="font-serif pb-15 md:px-10 dark:bg-neutral-950 transition-colors duration-300"
+      className="font-serif pb-3 md:px-10 bg-(--bg) transition-colors duration-300"
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-8 lg:px-0 ">
-        <div className="border-b border-neutral-200  dark:border-neutral-800 pb-6">
+        <div className="border-b border-(--border) pb-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-serif text-xl font-medium tracking-widest text-neutral-400 dark:text-neutral-500">
+              <span className="font-serif text-xl font-medium tracking-widest text-(--section-number)">
                 02 /
               </span>
-              <h2 className="text-4xl sm:text-5xl font-normal text-neutral-900 dark:text-neutral-100">
+              <h2 className="text-4xl sm:text-5xl font-normal text-(--text)">
                 Projects
               </h2>
             </div>
 
             {/* Deskripsi Rapat Kanan */}
-            <p className="text-sm text-neutral-500  dark:text-neutral-400  max-w-sm sm:text-right leading-relaxed font-serif ">
+            <p className="text-sm text-(--text)  max-w-sm sm:text-right leading-relaxed font-serif ">
               A collection of products I have designed and built through
               academic programs, courses, and independent work.
             </p>
@@ -80,9 +80,9 @@ function Projects() {
             {projectList.map((project) => (
               <div
                 key={project.id}
-                className="py-12 grid gap-5 lg:grid-cols-[320px_1fr_360px] items-start group hover:bg-neutral-50/50 dark:hover:bg-neutral-900 transition-colors duration-300 rounded-xl px-2 -mx-2"
+                className="py-12 grid gap-5 lg:grid-cols-[320px_1fr_360px] items-start group horver-(--surface-hover) transition-colors duration-300 rounded-xl px-2 -mx-2"
               >
-                <div className="overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-neutral-100 dark:bg-neutral-800 aspect-video">
+                <div className="overflow-hidden rounded-2xl border border-(--border) bg-(--bg) aspect-video">
                   <a
                     href={project.link_url}
                     target="blank"
@@ -100,7 +100,7 @@ function Projects() {
                 </div>
                 {/* 2. Informasi Utama Project */}
                 <div className="space-y-4 lg:pl-8 h-full min-h-20 ">
-                  <div className="flex justify-between uppercase tracking-[0.35em] text-[11px] text-neutral-400 dark:text-neutral-500 font-serif">
+                  <div className="flex justify-between uppercase tracking-[0.35em] text-[11px] text-(--text) font-serif">
                     <span>{project.category}</span>
                     <span className="font-sans">
                       {project.start_year && project.end_year
@@ -108,10 +108,10 @@ function Projects() {
                         : (project.start_year ?? "")}
                     </span>
                   </div>
-                  <h3 className="text-3xl  text-black dark:text-white">
+                  <h3 className="text-3xl  text-(--text)">
                     {project.title}
                   </h3>
-                  <p className="text-sm leading-relaxed text-neutral-600 dark:text-neutral-300 font-serif">
+                  <p className="text-sm leading-relaxed text-(--text) font-serif">
                     {project.description}
                   </p>
                   <div className="pt-2">
@@ -119,7 +119,7 @@ function Projects() {
                       href={project.link_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs font-sans font-bold tracking-wider uppercase text-neutral-800 dark:text-neutral-200 hover:text-neutral-500 dark:hover:text-neutral-400 border-b border-neutral-800 hover:border-neutral-500 pb-0.5 transition-all duration-300"
+                      className="inline-flex items-center gap-1.5 text-xs font-sans font-bold tracking-wider uppercase ttext-(--text) hover-(--surface-hover) border-b border-(--border) pb-0.5 transition-all duration-300"
                     >
                       View Case Study{" "}
                       <span className="text-[10px] select-none">↗</span>
@@ -128,26 +128,26 @@ function Projects() {
                 </div>
 
                 {/* 3. Peran & Tech Stack (Sisi Kanan) */}
-                <div className=" lg:border-l border-neutral-300 dark:border-neutral-700 lg:pl-8 w-full grid grid-rows-[auto_1fr] gap-6 self-stretch">
+                <div className=" lg:border-l border-(--border) lg:pl-8 w-full grid grid-rows-[auto_1fr] gap-6 self-stretch">
                   <div className="space-y-1.5 lg:pl-0">
-                    <span className="text-xs tracking-widest uppercase text-neutral-400 dark:text-neutral-500 font-serif block">
+                    <span className="text-xs tracking-widest uppercase text-(--text) font-serif block">
                       My Role
                     </span>
-                    <p className="text-sm font-serif text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                    <p className="text-sm font-serif text-(--text) leading-relaxed">
                       {project.role}
                     </p>
                   </div>
 
                   {/* Tech Tags */}
                   <div className="space-y-2.5 self-start lg:pl-0">
-                    <span className="text-xs uppercase tracking-widest text-neutral-400 font-serif block">
+                    <span className="text-xs uppercase tracking-widest text-(--text) font-serif block">
                       Tech Stack
                     </span>
                     <div className="flex flex-wrap gap-2 mt-4">
                       {project.tech.map((t) => (
                         <span
                           key={t}
-                          className="px-3 py-1 text-xs rounded-full border border-neutral-300 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300 font-serif"
+                          className="px-3 py-1 text-xs rounded-full border border-(--border) text-(--text) font-serif"
                         >
                           {t}
                         </span>

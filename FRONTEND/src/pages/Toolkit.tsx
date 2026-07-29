@@ -93,18 +93,18 @@ function Toolkit() {
     <section id="Toolkit" className="font-serif pb-15 md:px-10 text-left">
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 space-y-12">
         {/* ================== Header Section ====================== */}
-        <div className="border-b border-(--surface-border) pb-6">
+        <div className="border-b border-(--border) pb-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
-              <span className="font-sans text-xl font-medium tracking-widest dark:text-neutral-500 text-neutral-400 select-none">
+              <span className="font-sans text-xl font-medium tracking-widest text-(--section-number) select-none">
                 03 /
               </span>
-              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-neutral-900 dark:text-neutral-100">
+              <h2 className="text-4xl sm:text-5xl font-serif font-normal text-(--text)">
                 Toolkit
               </h2>
             </div>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400 sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
+            <p className="text-sm text-(--text) sm:max-w-none md:max-w-xs sm:text-right leading-relaxed font-serif">
               A collection of tools, frameworks, and practices that help me turn
               ideas into impactful products.
             </p>
@@ -117,9 +117,9 @@ function Toolkit() {
             <div
               key={section.category}
               className={`flex flex-col space-y-6 w-full items-start 
-            ${idx !== 0 ? "lg:border-l lg:border-(--surface-border) dark:lg:border-(--surface-border) lg:pl-6" : ""}`}
+            ${idx !== 0 ? "lg:border-l lg:border-(--border) dark:lg:border-(--border) lg:pl-6" : ""}`}
             >
-              <div className="w-full border-b border-(--surface-border) pb-2 text-left ">
+              <div className="w-full border-b border-(--border) pb-2 text-left ">
                 <span className="text-2xl font-serif text-(--text) font-normal block text-center">
                   {section.category}
                 </span>
@@ -137,7 +137,7 @@ function Toolkit() {
                     >
                       <div className="flex items-baseline gap-3">
                         {/* Nomor Urut Tipis / Muted */}
-                        <span className="font-sans text-sm font-medium text-(--text) select-none">
+                        <span className="font-sans text-sm font-medium text-(--section-number) select-none">
                           {itemNumber}
                         </span>
                         {/* Nama Teknologi */}

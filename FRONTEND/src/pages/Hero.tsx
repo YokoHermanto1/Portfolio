@@ -45,8 +45,7 @@ function Hero() {
                 lg:mx-0
                 lg:text-left
 
-                text-neutral-600
-                dark:text-neutral-300"
+                text-(--text)"
             >
               Building thoughtful products for people, not just writing code.
             </p>
@@ -80,11 +79,11 @@ function Hero() {
             bg-white
             p-1
             ring-1
-            ring-neutral-300
-            shadow-2xl
+            ring-neutral-200
+            shadow-lg
 
             dark:bg-neutral-900
-            dark:ring-neutral-700
+            dark:ring-neutral-800
 
             sm:h-80
             sm:w-80
