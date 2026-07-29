@@ -66,7 +66,7 @@ function Projects() {
             </div>
 
             {/* Deskripsi Rapat Kanan */}
-            <p className="text-sm text-neutral-500  dark:text-neutral-400  max-w-sm sm:text-right leading-relaxed font-serif text-center">
+            <p className="text-sm text-neutral-500  dark:text-neutral-400  max-w-sm sm:text-right leading-relaxed font-serif ">
               A collection of products I have designed and built through
               academic programs, courses, and independent work.
             </p>

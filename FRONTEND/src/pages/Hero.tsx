@@ -54,18 +54,13 @@ function Hero() {
           <a
             href="#Contact"
             className="
+                  btn-grad
                   w-fit
                   rounded-2xl
                   px-9
                   py-3
-                  bg-neutral-900
-                  text-white
                   transition-colors
-                  duration-300
-                  hover:bg-neutral-700
-                  dark:bg-white
-                  dark:text-neutral-900
-                  dark:hover:bg-neutral-200"
+                  duration-300"
           >
             Get in touch
           </a>

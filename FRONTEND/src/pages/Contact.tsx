@@ -103,7 +103,7 @@ function Contact() {
                     target={!isResume ? "_blank" : undefined}
                     rel={!isResume ? "noopener noreferrer" : undefined}
                     download={isResume ? "CV_Yoko_Hermanto.pdf" : undefined}
-                    className="flex items-center justify-between py-6 border-b border-neutral-200 dark:border-neutral-800 group transition-colors"
+                    className="flex items-center justify-between py-6 border-b  border-neutral-200 dark:border-neutral-800 group transition-colors"
                   >
                     <div className="flex items-baseline gap-6">
                       <span className="text-xs font-sans text-neutral-400 dark:text-neutral-500  select-none">

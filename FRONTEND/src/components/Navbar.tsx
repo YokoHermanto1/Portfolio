@@ -45,14 +45,14 @@ function Navbar() {
           z-50
           w-full
           border-b
-          border-neutral-200
-          bg-white/90
-          backdrop-blur-md
-          shadow-sm
+          bg-(--navbar)
+          border-(--border)
+          text-(--text)
+          backdrop-blur-xl
+          shadow-[0_8px_30px_rgba(0,0,0,.04)]
+          dark:shadow-[0_8px_30px_rgba(0,0,0,.25)]
           transition-all
           duration-300
-          dark:border-neutral-800
-          dark:bg-neutral-950/90
           ${
             isVisible
               ? "translate-y-0 opacity-100"
@@ -66,8 +66,7 @@ function Navbar() {
             className="font-serif
               text-xl
               font-bold
-              text-neutral-900
-              dark:text-neutral-100"
+              text-(--text)"
           >
             <a href="#Hero">PORTFOLIO</a>
           </h1>
@@ -78,16 +77,23 @@ function Navbar() {
                 gap-20
                 font-serif
                 text-base
-                text-neutral-800
+                text-(--text)]
                 md:flex
-                dark:text-neutral-200
+               
 "
           >
             {menuNavbar.map((item) => (
               <li key={item.id}>
                 <a
                   href={item.href}
-                  className="transition-color hover:text-amber-500 "
+                  className="
+                      nav-link
+                  relative
+                  transition-all
+                  duration-300
+                  ease-out
+                  hover:text-[#6E543A]
+                  dark:hover:text-[#C7A57A] "
                 >
                   {item.title}
                 </a>
@@ -104,12 +110,11 @@ function Navbar() {
               rounded-lg
               p-2
               transition-colors
-              hover:bg-neutral-100
-              dark:hover:bg-neutral-900
+              hover:bg-(--surface-hover)
               md:hidden
             "
           >
-            <Menu className="size-6 text-neutral-900 dark:text-neutral-100" />
+            <Menu className="size-6 text-(--text)" />
           </button>
         </div>
       </nav>
@@ -122,8 +127,7 @@ function Navbar() {
           z-50
           flex
           flex-col
-          bg-white
-          dark:bg-neutral-950
+          bg-(--bg)
           transition-all
           duration-300
           ease-in-out
@@ -134,22 +138,28 @@ function Navbar() {
           : "opacity-0 pointer-events-none invisible"
       }`}
       >
-        <div className="    
+        <div
+          className="    
                 flex
                 items-center
                 justify-between
                 border-b
-                border-neutral-200
+                border-(--border)
                 px-8
-                py-6
-                dark:border-neutral-800">
-          <h1 className="    
+                py-6"
+        >
+          <h1
+            className="    
                 font-serif
                 text-xl
                 font-bold
-                text-neutral-900
-                dark:text-neutral-100">
-            <a href="#Hero" onClick={() => setIsOpen(false)}>
+               text-(--text)"
+          >
+            <a
+              className="tracking-widest"
+              href="#Hero"
+              onClick={() => setIsOpen(false)}
+            >
               PORTFOLIO
             </a>
           </h1>
@@ -162,16 +172,16 @@ function Navbar() {
               rounded-lg
               p-2
               transition-colors
-              hover:bg-neutral-100
-              dark:hover:bg-neutral-900
+              hover:bg-(--surface-hover)
             "
           >
-            <X className="size-6 text-neutral-900 dark:text-neutral-100" />
+            <X className="size-6 text-(--text)" />
           </button>
         </div>
 
         <div className="flex-1 flex flex-col justify-center items-center">
-          <ul className="    
+          <ul
+            className="    
                 flex
                 flex-col
                 space-y-10
@@ -180,8 +190,8 @@ function Navbar() {
                 text-2xl
                 font-serif
 
-                text-neutral-900
-                dark:text-neutral-100">
+               text-(--text)"
+          >
             {menuNavbar.map((item) => (
               <li key={item.id}>
                 <a
@@ -191,7 +201,8 @@ function Navbar() {
                     block
                     py-2
                     transition-colors
-                    hover:text-amber-500"
+                   hover:text-[#73533A]
+                  dark:hover:text-[#C7A57A]"
                 >
                   {item.title}
                 </a>
