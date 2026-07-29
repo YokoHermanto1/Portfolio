@@ -93,7 +93,7 @@ function Toolkit() {
     <section id="Toolkit" className="font-serif pb-15 md:px-10 text-left">
       <div className="mx-auto w-full max-w-7xl sm:px-8 lg:px-0 px-4 space-y-12">
         {/* ================== Header Section ====================== */}
-        <div className="border-b border-neutral-200 dark:border-neutral-800 pb-6">
+        <div className="border-b border-(--surface-border) pb-6">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
             {/* Kelompok Judul & Angka Aksen */}
             <div className="flex items-baseline gap-4">
@@ -117,10 +117,10 @@ function Toolkit() {
             <div
               key={section.category}
               className={`flex flex-col space-y-6 w-full items-start 
-            ${idx !== 0 ? "lg:border-l lg:border-neutral-200  dark:lg:border-neutral-800  lg:pl-6" : ""}`}
+            ${idx !== 0 ? "lg:border-l lg:border-(--surface-border) dark:lg:border-(--surface-border) lg:pl-6" : ""}`}
             >
-              <div className="w-full border-b border-neutral-200 dark:border-neutral-800 pb-2 text-left ">
-                <span className="text-2xl font-serif text-neutral-900 dark:text-neutral-100 font-normal block text-center">
+              <div className="w-full border-b border-(--surface-border) pb-2 text-left ">
+                <span className="text-2xl font-serif text-(--text) font-normal block text-center">
                   {section.category}
                 </span>
               </div>
@@ -133,20 +133,20 @@ function Toolkit() {
                   return (
                     <div
                       key={item.name}
-                      className="group flex flex-col space-y-1 rounded-lg px-2 py-2 transition-all duration-200 hover:bg-neutral-50 dark:hover:bg-neutral-900"
+                      className="group flex flex-col space-y-1 rounded-lg px-2 py-2 transition-all duration-200"
                     >
                       <div className="flex items-baseline gap-3">
                         {/* Nomor Urut Tipis / Muted */}
-                        <span className="font-sans text-sm font-medium text-neutral-400 dark:text-neutral-500 select-none">
+                        <span className="font-sans text-sm font-medium text-(--text) select-none">
                           {itemNumber}
                         </span>
                         {/* Nama Teknologi */}
-                        <span className="font-serif text-sm font-bold tracking-wider uppercase text-neutral-800 dark:text-neutral-200 transition-colors group-hover:text-black dark:group-hover:text-white">
+                        <span className="font-serif text-sm font-bold tracking-wider uppercase text-(--text) transition-color">
                           {item.name}
                         </span>
                       </div>
                       {/* Deskripsi Singkat */}
-                      <p className="pl-6 text-sm font-serif text-neutral-500 dark:text-neutral-400 leading-relaxed">
+                      <p className="pl-6 text-sm font-serif text-(--text) leading-relaxed">
                         {item.desc}
                       </p>
                     </div>
