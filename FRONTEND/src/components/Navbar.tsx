@@ -1,9 +1,24 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { getLenis } from "../lib/lenis";
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(true); // State untuk menentukan navbar muncul/sembunyi
   const [isOpen, setIsOpen] = useState(false); // Kontrol menu mobile
+  const handleScroll = (
+  e: React.MouseEvent<HTMLAnchorElement>,
+  target: string
+) => {
+  e.preventDefault();
+
+  const lenis = getLenis();
+
+  lenis?.scrollTo(target, {
+    duration: 1,
+  });
+
+  setIsOpen(false);
+};
 
   useEffect(() => {
   document.body.style.overflow = isOpen ? "hidden" : "";
@@ -94,6 +109,7 @@ function Navbar() {
               <li key={item.id}>
                 <a
                   href={item.href}
+                  onClick={(e) => handleScroll(e, item.href)}
                   className="
                       nav-link
                   relative
@@ -204,7 +220,7 @@ function Navbar() {
               <li key={item.id}>
                 <a
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => handleScroll(e, item.href)}
                   className="  
                     block
                     py-2
