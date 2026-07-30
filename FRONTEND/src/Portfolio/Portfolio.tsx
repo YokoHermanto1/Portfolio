@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Projects from "../pages/Projects";
 import Toolkit from "../pages/Toolkit";
 import Contact from "../pages/Contact"
+import Footer from "../components/Footer";
 
 
 function Home() {
@@ -31,6 +32,10 @@ function Home() {
 
       <section id="Contact">
         <Contact />
+      </section>
+
+      <section id="Footer">
+        <Footer />
       </section>
     </main>
   );
