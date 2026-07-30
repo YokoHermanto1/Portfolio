@@ -91,7 +91,10 @@ function Navbar() {
               font-bold
               text-(--text)"
           >
-            <a href="#Hero">PORTFOLIO</a>
+            <a href="/" onClick={(e)=> {
+              e.preventDefault();
+              getLenis()?.scrollTo(0, {duration: 1,});
+            }}>PORTFOLIO</a>
           </h1>
 
           {/* DESKTOP MENU */}
@@ -181,8 +184,12 @@ function Navbar() {
           >
             <a
               className="tracking-widest"
-              href="#Hero"
-              onClick={() => setIsOpen(false)}
+              href="/"
+              onClick={(e) =>{
+                e.preventDefault();
+                getLenis()?.scrollTo(0,{duration:1,});
+                setIsOpen(false);
+              }}
             >
               PORTFOLIO
             </a>
