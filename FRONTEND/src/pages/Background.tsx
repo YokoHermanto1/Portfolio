@@ -78,7 +78,7 @@ function Background() {
               prototyping, and backend exploration, which lets me focus more of
               my energy on the design decisions and user-experience details that
               need a human eye. This portfolio itself, built with React,
-              Tailwind CSS, and a Laravel backend, reflects that same approach:
+              Tailwind CSS, and a Supabase backend, reflects that same approach:
               building real, working products while continuing to grow my
               independent development skills.
             </p>
